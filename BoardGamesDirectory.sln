@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.Api", "BoardGamesDirectory.Api\BoardGamesDirectory.Api.csproj", "{C288EE8A-75DE-4F00-B3DE-5C944A514758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.DataAccess", "BoardGamesDirectory.DataAccess\BoardGamesDirectory.DataAccess.csproj", "{5DC337D3-2FB3-4AB1-81D4-8DCF5EDC788C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.BusinessLogic", "BoardGamesDirectory.BusinessLogic\BoardGamesDirectory.BusinessLogic.csproj", "{28153760-2848-4806-B0C0-A2D71156CCF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C288EE8A-75DE-4F00-B3DE-5C944A514758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C288EE8A-75DE-4F00-B3DE-5C944A514758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C288EE8A-75DE-4F00-B3DE-5C944A514758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C288EE8A-75DE-4F00-B3DE-5C944A514758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC337D3-2FB3-4AB1-81D4-8DCF5EDC788C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC337D3-2FB3-4AB1-81D4-8DCF5EDC788C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC337D3-2FB3-4AB1-81D4-8DCF5EDC788C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC337D3-2FB3-4AB1-81D4-8DCF5EDC788C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28153760-2848-4806-B0C0-A2D71156CCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28153760-2848-4806-B0C0-A2D71156CCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28153760-2848-4806-B0C0-A2D71156CCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28153760-2848-4806-B0C0-A2D71156CCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
