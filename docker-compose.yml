@@ -1,0 +1,42 @@
+﻿version: '3.8'
+
+services:
+  db:
+    container_name: postgres-bgd
+    image: postgres:17.0-alpine3.20
+    environment:
+      POSTGRES_DB: "BoardGamesDirectoryDb"
+      POSTGRES_USER: "BoardGamesDirectory"
+      POSTGRES_PASSWORD: "postgres"
+      PGDATA: "/var/lib/postgresql/data/db-volume"
+    ports:
+      - "4321:5432"
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+    networks:
+      - app-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U BoardGamesDirectory -d BoardGamesDirectoryDb" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10 
+  
+  backend:
+    container_name: board-games-directory-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "8081:8081"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+    
+volumes:
+  db-volume:
+    
+networks:
+  app-network:
+    driver: bridge
