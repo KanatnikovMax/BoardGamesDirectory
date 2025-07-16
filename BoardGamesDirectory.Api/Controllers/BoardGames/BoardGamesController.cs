@@ -51,6 +51,7 @@ public class BoardGamesController : ControllerBase
         try
         {
             var boardGameModel = await _boardGamesManager.CreateBoardGameAsync(createBoardGameModel);
+            _logger.Information($"Board game created: {boardGameModel.Id}");
             return Ok(boardGameModel);
         }
         catch (BoardGameAlreadyExistsException e)
@@ -111,6 +112,7 @@ public class BoardGamesController : ControllerBase
         try
         {
             await _boardGamesManager.DeleteBoardGameAsync(id);
+            _logger.Information($"Board game deleted: {id}");
             return NoContent();
         }
         catch (BoardGameNotFoundException e)
@@ -144,6 +146,7 @@ public class BoardGamesController : ControllerBase
         try
         {
             var boardGameModel = await _boardGamesManager.UpdateBoardGameAsync(updateBoardGameModel, id);
+            _logger.Information($"Board game updated: {boardGameModel.Id}");
             return Ok(boardGameModel);
         }
         catch (BoardGameNotFoundException e)
