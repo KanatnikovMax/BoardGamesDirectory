@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.DataAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.BusinessLogic", "BoardGamesDirectory.BusinessLogic\BoardGamesDirectory.BusinessLogic.csproj", "{28153760-2848-4806-B0C0-A2D71156CCF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGamesDirectory.Api.Tests", "BoardGamesDirectory.Api.Tests\BoardGamesDirectory.Api.Tests.csproj", "{08C84708-8F45-4BFB-866B-7BF3A2E78D0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{28153760-2848-4806-B0C0-A2D71156CCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28153760-2848-4806-B0C0-A2D71156CCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28153760-2848-4806-B0C0-A2D71156CCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C84708-8F45-4BFB-866B-7BF3A2E78D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C84708-8F45-4BFB-866B-7BF3A2E78D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C84708-8F45-4BFB-866B-7BF3A2E78D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C84708-8F45-4BFB-866B-7BF3A2E78D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
