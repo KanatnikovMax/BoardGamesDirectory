@@ -8,17 +8,12 @@ namespace BoardGamesDirectory.BusinessLogic.Tests.Mapper
     [TestFixture]
     public class BoardGamesBLProfileTests
     {
-        private IMapper _mapper;
+        private IMapper _mapper = null!;
 
         [SetUp]
         public void Setup()
         {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<BoardGamesBLProfile>();
-            });
-
-            _mapper = config.CreateMapper();
+            _mapper = MapperHelper.Mapper;
         }
 
         [Test]
