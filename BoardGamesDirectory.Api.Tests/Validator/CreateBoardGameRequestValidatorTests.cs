@@ -1,4 +1,3 @@
-﻿using BoardGamesDirectory.Api.Controllers.BoardGames.Entities;
 using BoardGamesDirectory.Api.Tests.Helpers;
 using BoardGamesDirectory.Api.Validator.BoardGames;
 using FluentValidation.TestHelper;
